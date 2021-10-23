@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>News App</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body>
+        <section>
+            <div class="bg-white container py-2">
+                <h3 class="text-black  p-2 m-0">Latest News</h3>
+            </div>
+            <div class="content bg-light">
+                <div class="form py-3 container">
+                    <div class="form-container w-50 mr-auto">
+                        <input type="search" class="form-control mx-auto" placeholder="search" id="search" />
+                        <i class="fas fa-search"></i>
+                    </div>
+         <div class="dropdowns">
+                 <select id="regions">
+                    <option value="" hidden="">News Feeds</option>
+                    <option value="Movies">Movies</option>
+                    <option value="Covid-19">Covid-19</option>
+                    <option value="Bitcoins">Bitcoins</option>
+                    <option value="Stocks">Stocks</option>
+                    <option value="Weather">Weather</option>
+                    <option value="Media">Media</option>
+                    <option value="Vaccination">Vaccination</option>
+                 </select>
+         </div>
+                </div>
+                
+            </div>
+        </section>
+        <div class="container-fluid" id="news-builder-section">
+            <section class="container py-2 px-0" id="news" data-card-display="3" data-card-load="1"></section>
+            <div class="load-btn text-center mb-2">
+            <a href="javascript:void(0)" class="btn btn-primary btn-builder-news" id="load-more">Load More</a>
+        </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -2,5 +2,5 @@
 ---
 News Finder App 
 ---
-> ![Website](images/newsappnewsapp.png)
-> ### [LiveWebsite]()
+> ![Website](images/newsapp.png)
+> ### [LiveWebsite](https://newsin.netlify.app/)
